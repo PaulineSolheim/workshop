@@ -1,8 +1,8 @@
 <script type="text/javascript">
     //Variables :
     // 1 - Taille de la carte :
-    var mapSizeX = 600;
-    var mapSizeY = 400;
+    var mapSizeX = 880;
+    var mapSizeY = 448;
     // 2 - Taille de la bordure de la carte :
     var mapBorder = 35;
     // 3 - Position du personnage :
@@ -62,6 +62,7 @@ document.onkeydown = function(event) {
      else {
           key_pressed = event.keyCode; 
      }
+
      switch(key_pressed){
           case 37:
                context.clearRect(0,0,mapSizeX,mapSizeY);
@@ -107,9 +108,12 @@ function on_enter_frame(){
     context.fillStyle="#000000";
     base_image = new Image();
     base_image.src = 'nao.png';
+    lock_image = new Image();
+    lock_image.src = "question.png";
     context.closePath();
     context.fill();
     context.drawImage(base_image, posX, posY);
+    context.drawImage(lock_image, 45, 40);
 }
  
 setInterval(on_enter_frame,30);
@@ -120,23 +124,50 @@ setInterval(on_enter_frame,30);
 <head>
 <style type="text/css">
 #game_area{
-     background-color:#f5f5f5;
-     border:3px solid #878585;
+     background-color:transparent;
      position: absolute;
 }
-#line{
+#rect {
   position: absolute;
-  }
+}
+#description {
+  padding-bottom: 10px;
+  display: flex;
+}
+#contener{
+  padding-left: 120px;
+}
+#text{
+    text-align: center;
+    font-size: 20px;
+    font-family : arial;
+    color:grey;
+    padding-left: 200px;
+    padding-top: 20px;
+}
+#keyboard {
+  padding-left: 10px;
+}
+
 </style>
 </head>
 <body>
 
-  <div>
-     <canvas id="game_area" width="700" height="350"> </canvas>
-     <svg id="line" height="210" width="500">
-       <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(169,169,169);stroke-width:2" />
-     </svg> 
-  </div>
+<div id="contener">
+
+    <div id="description">
+      <p id="text"> Pour visiter le campus, <br> utilisez les touches du clavier  </p>
+      <img id="keyboard" src="keyboard.png" style="width:9%; height: auto;">
+    </div>
+
+    <div>
+       <canvas id="game_area" width="800" height="405" style="border:1px solid #000000;"> 
+       </canvas>
+           <img src="plan.jpg" alt="Plan EPSI" style="width:70%; height: auto;" />
+    </div>
+
+</div>
+  
       
 </body>
 </html>
