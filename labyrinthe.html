@@ -1,0 +1,130 @@
+<script type="text/javascript">
+
+    var posX=100;
+    var lastPosX = 100;
+    var posY=100;
+    var lastPosY = 100;
+
+document.onkeyup = function(event) {
+    var nao = document.getElementById('nao');
+    var key_pressed; 
+    if(event == null){
+         key_pressed = window.event.keyCode; 
+    }
+    else {
+         key_pressed = event.keyCode; 
+    }
+    switch(key_pressed){
+         case 37:
+              nao.style.visibility='visible';
+              context.clearRect(0,0,500,500);
+              posX=posX-3;
+              lastPosX = posX;
+              context.drawImage(base_image, posX, lastPosY);
+              break; 
+         case 38:
+              nao.style.visibility='visible';
+              context.clearRect(0,0,500,500);
+              posY=posY-3;
+              lastPosY = posY;
+              context.drawImage(base_image, lastPosX, posY);
+              break; 
+         case 39:
+              nao.style.visibility='visible';
+              context.clearRect(0,0,500,500);
+              posX=posX+3;
+              lastPosX = posX;
+              context.drawImage(base_image, posX, lastPosY);
+              break;
+         case 40:
+              nao.style.visibility='visible';
+              context.clearRect(0,0,500,500);
+              posY=posY+3;
+              lastPosY = posY;
+              context.drawImage(base_image, lastPosX, posY);
+              break; 
+    } 
+}
+ 
+document.onkeydown = function(event) {
+     var key_pressed; 
+     if(event == null){
+          key_pressed = window.event.keyCode; 
+     }
+     else {
+          key_pressed = event.keyCode; 
+     }
+     switch(key_pressed){
+          case 37:
+               context.clearRect(0,0,500,500);
+               if ( posX < 0 ) { posX = 0 } // empeche le nao de sortir à gauche
+               posX=posX-3;
+               lastPosX = posX;
+               context.drawImage(base_image, posX, lastPosY);
+               break; 
+          case 38:
+               context.clearRect(0,0,500,500);
+               if ( posY < 4 ) { posY = 4 } // empeche le nao de sortir en haut
+               posY=posY-3;
+               lastPosY = posY;
+               context.drawImage(base_image, lastPosX, posY);
+               break; 
+          case 39:
+               context.clearRect(0,0,500,500);
+               if ( posX > 468 ) { posX = 468 } // empeche le nao de sortir à droite
+               posX=posX+3;
+               lastPosX = posX;
+               context.drawImage(base_image, posX, lastPosY);
+               break;
+          case 40:
+               context.clearRect(0,0,500,500);
+               if ( posY > 464 ) { posY = 464 }  // empeche le nao de sortir en bas
+               posY=posY+3;
+               lastPosY = posY;
+               context.drawImage(base_image, lastPosX, posY);
+               break; 
+     } 
+}
+ 
+var context;
+var x_speed=0;
+var y_speed=0;
+var y=250;
+var x=250;
+var left=false;
+var right=false;
+var up=false;
+var down=false;
+var friction=0.95;
+ 
+function on_enter_frame(){
+    context=game_area.getContext('2d');
+    context.clearRect(0,0,500,500);
+    context.beginPath();
+    context.fillStyle="#000000";
+    base_image = new Image();
+    base_image.src = 'nao.png';
+    //context.arc(x,y,10,0,Math.PI*2,true);
+    context.closePath();
+    context.fill();
+    context.drawImage(base_image, posX, posY);
+}
+ 
+setInterval(on_enter_frame,30);
+ 
+</script>
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#game_area{
+     background-color:#f5f5f5;
+     border:1px solid #e5e5e5;
+}
+</style>
+</head>
+<body>
+     <canvas id="game_area" width="500" height="500"> </canvas> 
+</body>
+</html>
