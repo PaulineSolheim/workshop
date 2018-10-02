@@ -1,18 +1,19 @@
 <script type="text/javascript">
 
     //Variables :
-    // 1 - Position du personnage :
-    var posX=250;
-    var lastPosX = 250;
-    var posY=250;
-    var lastPosY = 250;
 
-    // 2 - Taille de la carte :
+    // 1 - Taille de la carte :
     var mapSizeX = 600;
     var mapSizeY = 400;
 
-    // 3 - Taille de la bordure de la carte :
-    var mapBorder = 40;
+    // 2 - Taille de la bordure de la carte :
+    var mapBorder = 35;
+
+    // 3 - Position du personnage :
+    var posX = mapSizeX / 2;
+    var lastPosX = posX;
+    var posY= mapSizeY / 2;
+    var lastPosY = posY;
 
     // 4 - Vitesse du personnage :
     var PnjSpeed = 5;
@@ -73,28 +74,28 @@ document.onkeydown = function(event) {
      switch(key_pressed){
           case 37:
                context.clearRect(0,0,mapSizeX,mapSizeY);
-               if ( posX < 0 ) { posX = 0 } // empeche le nao de sortir à gauche
+               if ( posX < 5 ) { posX = 5 } // empeche le nao de sortir à gauche
                posX=posX-PnjSpeed;
                lastPosX = posX;
                context.drawImage(base_image, posX, lastPosY);
                break; 
           case 38:
                context.clearRect(0,0,mapSizeX,mapSizeY);
-               if ( posY < 4 ) { posY = 4 } // empeche le nao de sortir en haut
+               if ( posY < 8 ) { posY = 8 } // empeche le nao de sortir en haut
                posY=posY-PnjSpeed;
                lastPosY = posY;
                context.drawImage(base_image, lastPosX, posY);
                break; 
           case 39:
                context.clearRect(0,0,mapSizeX,mapSizeY);
-               if ( posX > 468 ) { posX = 468 } // empeche le nao de sortir à droite
+               if ( posX > mapSizeX - mapBorder ) { posX = mapSizeX - mapBorder } // empeche le nao de sortir à droite
                posX=posX+PnjSpeed;
                lastPosX = posX;
                context.drawImage(base_image, posX, lastPosY);
                break;
           case 40:
                context.clearRect(0,0,mapSizeX,mapSizeY);
-               if ( posY > 464 ) { posY = 464 }  // empeche le nao de sortir en bas
+               if ( posY > mapSizeY - mapBorder - 5 ) { posY = mapSizeY - mapBorder - 5 }  // empeche le nao de sortir en bas
                posY=posY+PnjSpeed;
                lastPosY = posY;
                context.drawImage(base_image, lastPosX, posY);
@@ -118,14 +119,9 @@ function on_enter_frame(){
     context.closePath();
     context.fill();
     context.drawImage(base_image, posX, posY);
-    x+=x_speed;
-    y+=y_speed;
-    x_speed*=0.80;
-    y_speed*=0.80;
 }
  
 setInterval(on_enter_frame,30);
- 
 </script>
  
 <!DOCTYPE html>
@@ -134,11 +130,12 @@ setInterval(on_enter_frame,30);
 <style type="text/css">
 #game_area{
      background-color:#f5f5f5;
-     border:1px solid #e5e5e5;
+     border:5px solid #190dbd;
 }
+
 </style>
 </head>
 <body>
-     <canvas id="game_area" width="500" height="500"> </canvas> 
+     <canvas id="game_area" width="600" height="400"> </canvas> 
 </body>
 </html>
