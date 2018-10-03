@@ -268,14 +268,12 @@ function Engine() {
 				break;
 				break;
 			case "@": // nao on empty space
-				this.ctx.fillStyle = "rgba(255,255,220,1)";
-				this.ctx.fillRect(posX, posY, 10, 10);
 				x = posX;
 				y = posY;
-				this.ctx.fillStyle = "red";
-				this.ctx.beginPath();
-				this.ctx.arc(posX + 5, posY + 5, 5, 0, 2 * Math.PI, false);
-				this.ctx.fill();
+				base_image = new Image();
+				base_image.src = 'nao.png';
+				this.ctx.drawImage(base_image, posX, posY, 10, 10);
+				this.ctx.fill()
 				break;
 			default: // "space" ~ empty
 				this.ctx.fillStyle = "rgba(255,255,220,1)";
