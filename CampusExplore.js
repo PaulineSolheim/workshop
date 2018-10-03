@@ -263,23 +263,22 @@ function Engine() {
 	this.draw = function (posX, posY, s) {
 		switch (s) {
 			case "#": // wall
-				this.ctx.fillStyle = "grey";
+				this.ctx.fillStyle = "lightgrey";
 				this.ctx.fillRect(posX, posY, 10, 10);
 				break;
 				break;
 			case "@": // nao on empty space
-				this.ctx.fillStyle = "lightgrey";
+				this.ctx.fillStyle = "rgba(255,255,220,1)";
 				this.ctx.fillRect(posX, posY, 10, 10);
 				x = posX;
 				y = posY;
 				this.ctx.fillStyle = "red";
 				this.ctx.beginPath();
 				this.ctx.arc(posX + 5, posY + 5, 5, 0, 2 * Math.PI, false);
-				/*this.ctx.drawImage("nao.png", posX, posY);*/
 				this.ctx.fill();
 				break;
 			default: // "space" ~ empty
-				this.ctx.fillStyle = "lightgrey";
+				this.ctx.fillStyle = "rgba(255,255,220,1)";
 				this.ctx.fillRect(posX, posY, 10, 10);
 
 		};
@@ -315,8 +314,8 @@ function Engine() {
 
 		}
 
-		this.printOut(50, 50, "Move: Arrows, Restart: r, Next: z, Previous: a", "black", 15);
-		this.printOut(700, 50, "Batiment Croix verte etage : " + game.level, "black", 15);
+		this.printOut(20, 20, "Move: Arrows, Restart: r, Next: z, Previous: a", "black", 15);
+		this.printOut(700, 20, "Batiment Croix verte etage : " + game.level, "black", 15);
 	}
 
 
