@@ -28,7 +28,6 @@ function CampusExploration() {
 	this.boards = [];
 	this.level = 1;
 	this.boards.push("####################################################################################################|"+
-		 "#@               #               #                           #                   #                 #|"+
 		 "#                #               #                           #                   #                 #|"+
 		 "#                #               #                           #                   #                 #|"+
 		 "#                #               #                           #                   #                 #|"+
@@ -37,29 +36,30 @@ function CampusExploration() {
 		 "#                #               #                           #                   #                 #|"+
 		 "#                #               #                           #                   #                 #|"+
 		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           ############   ######   ###############|"+
-		 "###########      #               #                           #     #                               #|"+
+		 "#                #               #                           #            12     # 12              #|"+
+		 "#                #               #                           # abc        34     # 34              #|"+
+		 "#56     abc      #               #                           # def               #                 #|"+
+		 "#78     def      #               #                           ############   ######   ###############|"+
+		 "###########      #               #                           #  @  #                               #|"+
 		 "#    #    #      #               #                           #     #                               #|"+
 		 "#    #    #      #               #                           #     #                               #|"+
-		 "#    #    #      #               #                           #     #     ###############           #|"+
-		 "#    #    #      #               #                           #     #     #                         #|"+
-		 "#    #    #      #               #                           #     #     #                         #|"+
+		 "#    #    #  12  #  12           #               12          #     #     ###############           #|"+
+		 "#    #    #  34  #  34           #56             34          #     #     #                  12     #|"+
+		 "#    #    #      #               #78                         #     #     #                  34     #|"+
 		 "#   ##    ####   #      #########################   ##########     #     #                         #|"+
 		 "#                                                            #     #     #                         #|"+
-		 "#                                                            #     #     #                         #|"+
-		 "#                                                            #     #     #                         #|"+
+		 "#                                                            #     #     #  abc                    #|"+
+		 "#                                                            #     #     #  def                    #|"+
 		 "#   #####################   ##################            ####     #     ###########################|"+
 		 "#                                #                                       #                         #|"+
-		 "#                                #                                       #                         #|"+
-		 "#                                #        #                 #            #                         #|"+
-		 "#                                #        #                 #                                      #|"+
+		 "#                        12      #                                       #                         #|"+
+		 "#                        34      #        #  12             #            #                         #|"+
+		 "#                                #        #  34             #                                      #|"+
 		 "#                                #        #   ###############                                      #|"+
 		 "#                                #        #   #                 ##########                         #|"+
 		 "#                                #        #   #                 #                                  #|"+
-		 "#                                #        #   #                 #                                  #|"+
-		 "#                                #        #   #                 #                                  #|"+
+		 "#                                #        #   #                 #     12              12           #|"+
+		 "#                                #        #   #                 #     34              34           #|"+
 		 "#                                #        #   #                 #        #                         #|"+
 		 "#                                #        #   #                 #        #                         #|"+
 		 "#                                #        #   #                 #        #                         #|"+
@@ -67,8 +67,8 @@ function CampusExploration() {
 		 "#                                ##########   #                 #        #                         #|"+
 		 "#                                #            #                 #        #                         #|"+
 		 "#                                #            #                 ##########                         #|"+
-		 "#                                #            #                                                    #|"+
-		 "#                                #            #                                                    #|"+
+		 "#                                #            #                                                 abc#|"+
+		 "#                                #            #                                                 def#|"+
 		 "#                                #            #######    #    ########   #      ###    #############|"+
 		 "#                                #            #          #               #      #                  #|"+
 		 "#                                #            #          #               #      #                  #|"+
@@ -77,8 +77,8 @@ function CampusExploration() {
 		 "#                                #            #          #               #      #                  #|"+
 		 "#                                #            #          #               #      #                  #|"+
 		 "#                                #            #          #               #      #                  #|"+
-		 "#                                #            #          #               #      #                  #|"+
-		 "#                                #            #          #               #      #                  #|"+
+		 "# 56                        abc  #            #          #               #      #                56#|"+
+		 "# 78                        def  #            #          #               #      #                78#|"+
 		 "####################################################################################################|"
 		             );
 		 
@@ -100,39 +100,39 @@ function CampusExploration() {
 		     "#               #               #                 #                 #       #            #         #|"+
 		     "#               #               #                 #                 #       #            #         #|"+
 		     "#               #               #                 #                 #       #            #         #|"+
-		     "#               #               #                 #                 #       #            #         #|"+
-		     "#               #               #                 #                 #       #            #         #|"+
-		     "#               #               #                 #                 #       #            #         #|"+
-		     "#############   #############   #                 #                 #       ##########             #|"+
-		     "#                               #                 #                         #                      #|"+
-		     "#                               #                 #                         #                      #|"+
-		     "#                               #                 #                                 ################|"+
-		     "#                               #                 #                 #                              #|"+
+		     "#             12#             12#                 #                 #       #            #         #|"+
+		     "#56    abc    34#             34#                 #                 #       #abc         #         #|"+
+		     "#78    def      #               #                 #                 #       #def         #         #|"+
+		     "#############   #############   #                 #                 #       ##########       12    #|"+
+		     "#                               #                 #                         #                34    #|"+
+		     "#                               #                 #             12          #                      #|"+
+		     "#                               #                 # 56          34                  ################|"+
+		     "#                               #                 # 78              #                              #|"+
 		     "#############################   #                 ###################                              #|"+
 		     "#                           #   #                 #                 #              #               #|"+
 		     "#                           #   #                 #                 #              #               #|"+
-		     "#                           #   #                 #                 #           ####               #|"+
-		     "#                           #   #              ####                 #           ####               #|"+
-		     "#                           #                                       #           ####               #|"+
-		     "#                           #                                       #           ####               #|"+
+		     "#                           #   #     12          #                 #           ####               #|"+
+		     "#                           #   #     34       ####                 #         12####               #|"+
+		     "#                           #                                  abc  #         34####               #|"+
+		     "#                           #                                  def  #           ####               #|"+
 		     "#                           #        ############     ###############           ####               #|"+
 		     "#                           #                #        #             #              #               #|"+
 		     "#                           #                #        #             #              #               #|"+
 		     "#                           #                #        #             #              #               #|"+
 		     "#                           #          #######        #             #              #               #|"+
 		     "#                                                                                  #               #|"+
-		     "#                                                                                                  #|"+
-		     "#                                                                                                  #|"+
+		     "#                      12                                                                          #|"+
+		     "#                      23                                                                          #|"+
 		     "################################     ###############################               ############    #|"+
 		     "################################                                                                   #|"+
-		     "################################                                                                   #|"+
-		     "################################                                                                   #|"+
+		     "################################                               12                      12          #|"+
+		     "################################                               34                      34          #|"+
 		     "################################                                   #               #               #|"+
 		     "################################                                   #               #               #|"+
 		     "################################                                   #               #               #|"+
 		     "################################                                   #               #               #|"+
-		     "################################                                   #               #               #|"+
-		     "################################                                   #               #               #|"+
+		     "################################                                abc#               #             56#|"+
+		     "################################                                def#               #             78#|"+
 		     "####################################################################################################|"
 		     );
 	this.board = this.boards[this.level - 1];
@@ -277,6 +277,90 @@ function Engine() {
 				this.ctx.drawImage(base_image, posX, posY, 10, 10);
 				this.ctx.fill()
 				break;
+			case "1":
+				topleftq = new Image();
+				topleftq.src = 'img/topleftquestion.png';
+				this.ctx.drawImage(topleftq, posX, posY, 10, 10);
+				this.ctx.fill()
+				break;
+			case "2":
+				toprightq = new Image();
+				toprightq.src = 'img/toprightquestion.png';
+				this.ctx.drawImage(toprightq, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "3":
+				botleftq = new Image();
+				botleftq.src = 'img/botleftquestion.png';
+				this.ctx.drawImage(botleftq, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "4":
+				botrightq = new Image();
+				botrightq.src = 'img/botrightquestion.png';
+				this.ctx.drawImage(botrightq, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "5":
+				topleftp = new Image();
+				topleftp.src = 'img/topleftplant.jpeg';
+				this.ctx.drawImage(topleftp, posX, posY, 10, 10);
+				this.ctx.fill()
+				break;
+			case "6":
+				toprightp = new Image();
+				toprightp.src = 'img/toprightplant.jpeg';
+				this.ctx.drawImage(toprightp, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "7":
+				botleftp = new Image();
+				botleftp.src = 'img/botleftplant.jpeg';
+				this.ctx.drawImage(botleftp, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "8":
+				botrightp = new Image();
+				botrightp.src = 'img/botrightplant.jpeg';
+				this.ctx.drawImage(botrightp, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "a":
+				toprightdesk = new Image();
+				toprightdesk.src = 'img/a.jpg';
+				this.ctx.drawImage(toprightdesk, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "b":
+				topmiddledesk = new Image();
+				topmiddledesk.src = 'img/b.jpg';
+				this.ctx.drawImage(topmiddledesk, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "c":
+				toprightdesk = new Image();
+				toprightdesk.src = 'img/c.jpg';
+				this.ctx.drawImage(toprightdesk, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "d":
+				botleftdesk = new Image();
+				botleftdesk.src = 'img/d.jpg';
+				this.ctx.drawImage(botleftdesk, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "e":
+				botmiddledesk = new Image();
+				botmiddledesk.src = 'img/e.jpg';
+				this.ctx.drawImage(botmiddledesk, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "f":
+				botrightdesk = new Image();
+				botrightdesk.src = 'f.jpg';
+				this.ctx.drawImage(botrightdesk, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
 			default: // "space" ~ empty
 				this.ctx.fillStyle = "rgba(239,238,243,1)";
 				this.ctx.fillRect(posX, posY, 10, 10);
