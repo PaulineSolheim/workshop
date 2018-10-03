@@ -1,0 +1,22 @@
+*
+{
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+.wrapper
+{
+	width: 1001px;
+	height: 601px;
+	margin: auto;
+	
+}
+
+.modal-img {
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
