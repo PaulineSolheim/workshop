@@ -132,110 +132,109 @@ function CampusExploration() {
 	this.level = 1;
 	this.boards.push("####################################################################################################|"+
 		 "#                #               #                           #                   #                 #|"+
+		 "#abcabc    abcabc#abcabc   abcabc#abcabcabcabc   abcabcabcabc#                   #                 #|"+
+		 "#defdef    defdef#defdef   defdef#defdefdefdef   defdefdefdef#                   #                 #|"+
+		 "#                #               #                           #        abc        #        abc      #|"+
+		 "#abcabc    abcabc#abcabc   abcabc#abcabcabcabc   abcabcabcabc#        def        #        def      #|"+
+		 "#defdef    defdef#defdef   defdef#defdefdefdef   defdefdefdef#                   #                 #|"+
 		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           #                   #                 #|"+
-		 "#                #               #                           #            12     # 12              #|"+
-		 "#                #               #                           # abc        34     # 34              #|"+
-		 "#56     abc      #               #                           # def               #                 #|"+
-		 "#78     def      #               #                           ############PPP######PPP###############|"+
+		 "#abcabc    abcabc#abcabc   abcabc#abcabcabcabc   abcabcabcabc#                   #                 #|"+
+		 "#defdef    defdef#defdef   defdef#defdefdefdef   defdefdefdef#            12     # 12              #|"+
+		 "#                #               #                           #            34     # 34              #|"+
+		 "#56     abc      #abcabc   abcabc#abcabcabcabc   abcabcabcabc#                   #                 #|"+
+		 "#78     def      #defdef   defdef#defdefdefdef   defdefdefdef############PPP######PPP###############|"+
 		 "###########      #               #                           #######                   P           #|"+
-		 "#    #    #      #               #                           #######                   P           #|"+
-		 "#    #    #      #               #                           #######                   P           #|"+
+		 "#    #    #      #         abcabc#abcabcabcabc               #######                   P           #|"+
+		 "#    #    #      #         defdef#defdefdefdef               #######                   P           #|"+
 		 "#    #    #  12  #  12           #               12          #######     ###############           #|"+
-		 "#    #    #  34  #  34           #56             34          #######     #                  12     #|"+
-		 "#    #    #      #               #78                         #######     #                  34     #|"+
-		 "#   ###   ####PPP#PPP############################PPP################     #                         #|"+
-		 "#         P                                                  #TTTTT#     #                         #|"+
-		 "#         P                                                  #  @  #     #  abc                    #|"+
-		 "#         P                                                  #     #     #  def                    #|"+
+		 "#    #    #  34  #  34  abc      #56          abc34          #######     #                  12     #|"+
+		 "#    #    #      #      def      #78          def            #######     #                  34     #|"+
+		 "#   ###   ####PPP#PPP##################################PPP##########     #       abc               #|"+
+		 "#         P                                                  #TTTTT#     #       def               #|"+
+		 "#         P                                                  #  @  #     #                         #|"+
+		 "#         P                                                  #     #     #                         #|"+
 		 "#PPP#####################PPP##################            ####     #     ###########################|"+
-		 "#                                #        P                              #                         #|"+
-		 "#                        12      #        P                              #                         #|"+
+		 "#               abc              #        P                              #    qrsqrs      qrsqrs   #|"+
+		 "#               def      12      #        P                              #    tuvtuv      tuvtuv   #|"+
 		 "#                        34      #        #  12             #            P                         #|"+
-		 "#                                #abc  abc#  34             #            P                         #|"+
-		 "#                                #def  def#   ###############PPP#        P                         #|"+
-		 "#                                #        #   #                 ##########                         #|"+
-		 "#                                #abc  abc#   #                 #        P                         #|"+
+		 "#                                #abc  abc#  34             #            P            klm          #|"+
+		 "#                                #def  def#   ###############PPP#        P            nop          #|"+
+		 "#abcabcabcabc        abcabcabcabc#        #   #   qrs   qrs     ##########                         #|"+
+		 "#defdefdefdef        defdefdefdef#abc  abc#   #   tuv   tuv     #        P                         #|"+
 		 "#                                #def  def#   #                 #     12 P            12           #|"+
 		 "#                                #        #   #                 #     34 P            34           #|"+
-		 "#                                #abc  abc#   #                 #        #                         #|"+
-		 "#                                #def  def#   #                 #        #                         #|"+
-		 "#                                #        #   #                 #        #                         #|"+
-		 "#                                #        #   #                 #        #                         #|"+
-		 "#                                ##########PPP#                 #        #                         #|"+
-		 "#                                #            #                 #        #                         #|"+
-		 "#                                #            #############PPP############                         #|"+
+		 "#abcabcabcabc        abcabcabcabc#abc  abc#   #                 #        #                         #|"+
+		 "#defdefdefdef        defdefdefdef#def  def#   #                 #        #                         #|"+
+		 "#                                #        #   #                 #        #            klm          #|"+
+		 "#                                #        #   #                 #        #            nop          #|"+
+		 "#abcabcabcabc        abcabcabcabc##########PPP#                 #        #                         #|"+
+		 "#defdefdefdef        defdefdefdef# qrs qrs    #                 #        #                         #|"+
+		 "#                                # tuv tuv    #############PPP############                         #|"+
 		 "#                                #            #                          P                      abc#|"+
-		 "#                                #            #                          P                      def#|"+
-		 "#                                #            #######PPP###PPP#######PPP##      ###PPPP#############|"+
-		 "#                                #            #          #               #      #                  #|"+
-		 "#                                #            #          #               #      #                  #|"+
-		 "#                                #            #          #               #      #                  #|"+
-		 "#                                #            #          #               #      #                  #"+
-		 "#                                #            #          #               #      #                  #|"+
-		 "#                                #            #          #               #      #                  #|"+
-		 "#                                #            #          #               #      #                  #|"+
-		 "# 56                        abc  #            #          #               #      #                56#|"+
-		 "# 78                        def  #            #          #               #      #                78#|"+
+		 "#abcabcabcabc        abcabcabcabc#            #                          P                      def#|"+
+		 "#defdefdefdef        defdefdefdef#            #######PPP###PPP#######PPP##      ###    #############|"+
+		 "#                                #            # gh       #    gh # gh    #      #         wx  wx   #|"+
+		 "#                                #            # ij       #    ij # ij    #      #         yz  yz   #|"+
+		 "#abcabcabcabc        abcabcabcabc#            #          #       #       #      #                  #|"+
+		 "#defdefdefdef        defdefdefdef#            #          #       #       #      #                  #|"+
+		 "#                                #            #          #       #       #      #                  #|"+
+		 "#                                #            #          #       #       #      #                  #|"+
+		 "#abcabcabcabc        abcabcabcabc#            #          #       #       #      #         wx  wx   #|"+
+		 "#defdefdefdef        defdefdefdef#            #          #       #       #      #         yz  yz   #|"+
 		 "####################################################################################################|"
 		             );
 		 
 	this.boards.push("####################################################################################################|"+
 		     "#               P               ####################################################################|"+
-		     "#               P               ####################################################################|"+
-		     "#               P               ####################################################################|"+
+		     "#abcabc         P         abcabc####################################################################|"+
+		     "#defdef         P         defdef####################################################################|"+
 		     "#               #               ####################################################################|"+
-		     "#abcabc   abcabc#               ####################################################################|"+
-		     "#defdef   defdef#               ####################################################################|"+
+		     "#abcabc   abcabc#abcabc   abcabc####################################################################|"+
+		     "#defdef   defdef#defdef   defdef####################################################################|"+
 		     "#               #               #####################################TTTTTTT########################|"+
-		     "#abcabc   abcabc#               #                 P                 #   @   #            #         #|"+
-		     "#defdef   defdef#               #                 P                 #       #            #         #|"+
+		     "#abcabc   abcabc#abcabc   abcabc#abcabc           P       abc       #   @   #56        56#       56#|"+
+		     "#defdef   defdef#defdef   defdef#defdef           P       def       #       #78        78#       78#|"+
 		     "#               #               #                 P                 #       #            #         #|"+
-		     "#abcabc   abcabc#               #                 #                 #       #            #         #|"+
-		     "#defdef   defdef#               #                 #                 #       #            #         #|"+
+		     "#abcabc   abcabc#abcabc   abcabc#abcabc     abcabc#abcabc     abcabc#       #            #         #|"+
+		     "#defdef   defdef#defdef   defdef#defdef     defdef#defdef     defdef#       #            #         #|"+
+		     "#               #               #                 #                 #       #     abc    #   abc   #|"+
+		     "#abcabc   abcabc#abcabc   abcabc#abcabc     abcabc#abcabc     abcabc#       #     def    #   def   #|"+
+		     "#defdef   defdef#defdef   defdef#defdef     defdef#defdef     defdef#       #            #         #|"+
 		     "#               #               #                 #                 #       #            #         #|"+
-		     "#abcabc   abcabc#               #                 #                 #       #            #         #|"+
-		     "#defdef   defdef#               #                 #                 #       #            #         #|"+
-		     "#               #               #                 #                 #       #            #         #|"+
-		     "#               #               #                 #                 #       #            #         #|"+
-		     "#             12#             12#                 #                 #       #            #         #|"+
-		     "#56    abc    34#             34#                 #                 #       #abc         #         #|"+
-		     "#78    def      #               #                 #                 #       #def         #         #|"+
-		     "#############PPP#############PPP#                 #                 #       ##########       12    #|"+
-		     "#                               #                 #                 P       #                34    #|"+
-		     "#                               #                 #             12  P       #                      #|"+
-		     "#                               #                 # 56          34  P       #      #################|"+
-		     "#                               #                 # 78              #              P               #|"+
-		     "#############################   #                 ###################              P               #|"+
-		     "#                           #   #                 #                 #              P               #|"+
-		     "#                           #   #                 #                 #       ########               #|"+
+		     "#               #               #abcabc     abcabc#abcabc     abcabc#       #            #         #|"+
+		     "#             12#             12#defdef     defdef#defdef     defdef#       #            #         #|"+
+		     "#      abc    34#      abc    34#                 #                 #       #56          #         #|"+
+		     "#      def      #      def      #abcabc     abcabc#abcabc     abcabc#       #78          #         #|"+
+		     "#############PPP#############PPP#defdef     defdef#defdef     defdef#       ##########       12    #|"+
+		     "#                               #                 #                 P       #                34  56#|"+
+		     "#                               #abcabc     abcabc#abcabc       12  P       #                    78#|"+
+		     "#                               #defdef     defdef#defdef       34  P       #      #################|"+
+		     "#                               #                 #                 #              P    qrsqrs   56#|"+
+		     "#############################   #abcabc     abcabc###################              P    tuvtuv   78#|"+
+		     "#            abc            #   #defdef     defdef#                 #              P               #|"+
+		     "#            def            #   #                 #                 #       ########               #|"+
 		     "#                           #   #     12          #                 #              #               #|"+
-		     "#                           #   P     34     P#####                 #         12####               #|"+
-		     "#                           #   P            P                 abc  #         34####               #|"+
-		     "#                           #   P            P                 def  #           ####               #|"+
-		     "#                           #   ###################PPP###############           ####               #|"+
-		     "#                           #   P        #        #   #         #   P              #               #|"+
-		     "#                           #   P        #        #   #         #   P              #               #|"+
-		     "#                           #   P        #        #   #         #   P              #               #|"+
-		     "#                           #   ###############PPP#PPP#######PPP#####              #               #|"+
+		     "#abcabcabcabc   abcabcabcabc#   P     34     P#####                 #         12####               #|"+
+		     "#defdefdefdef   defdefdefdef#   P       abc  P                      #         34####               #|"+
+		     "#                           #   P       def  P                      #           ####               #|"+
+		     "#abcabcabcabc   abcabcabcabc#   ###################PP################           ####               #|"+
+		     "#defdefdefdef   defdefdefdef#   P     gh # gh     #  # gh       #   P              #               #|"+
+		     "#                           #   P     ij # ij     #  # ij       #   P              #               #|"+
+		     "#abcabcabcabc   abcabcabcabc#   P        #        #  #          #   P              #               #|"+
+		     "#defdefdefdef   defdefdefdef#   ###############PPP#PP########PPP#####              #               #|"+
 		     "#                           P                                                      P               #|"+
-		     "#                      12   P                                                      P               #|"+
-		     "#                      34   P                                                      P               #|"+
+		     "#abcabcabcabc          12   P                                                      P               #|"+
+		     "#defdefdefdef          34   P                                                      P               #|"+
 		     "################################     ################################              ############    #|"+
-		     "################################                                                   P               #|"+
-		     "################################                               12                  P   12          #|"+
+		     "################################         qrsqrs     qrsqrs                         P       qrs     #|"+
+		     "################################         tuvtuv     tuvtuv     12                  P   12  tuv     #|"+
 		     "################################                               34                  P   34          #|"+
-		     "################################                                    #              #               #|"+
-		     "################################                                    #              #               #|"+
-		     "################################                                    #              #               #|"+
-		     "################################                                    #              #               #|"+
-		     "################################                                 abc#              #             56#|"+
-		     "################################                                 def#              #             78#|"+
+		     "################################wx                                wx#              #               #|"+
+		     "################################yz                                yz#              #               #|"+
+		     "################################           klm       klm            #              #               #|"+
+		     "################################           nop       nop            #              #               #|"+
+		     "################################wx                                wx#              #56           56#|"+
+		     "################################yz                                yz#              #78           78#|"+
 		     "####################################################################################################|"
 		     );
 	this.board = this.boards[this.level - 1];
@@ -492,6 +491,135 @@ function Engine() {
 			case "f":
 				addElements('img/f.jpg', posX, posY);
 			break;
+				
+			case "g":
+				toilettl = new Image();
+				toilettl.src = 'img/toilettl.jpeg';
+				this.ctx.drawImage(toilettl, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "h":
+				toilettr = new Image();
+				toilettr.src = 'img/toilettr.jpeg';
+				this.ctx.drawImage(toilettr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "i":
+				toiletbl = new Image();
+				toiletbl.src = 'img/toiletbl.jpeg';
+				this.ctx.drawImage(toiletbl, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "j":
+				toiletbr = new Image();
+				toiletbr.src = 'img/toiletbr.jpeg';
+				this.ctx.drawImage(toiletbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+
+			case "k":
+				billardtl = new Image();
+				billardtl.src = 'img/billardtl.png';
+				this.ctx.drawImage(billardtl, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "l":
+				billardtr = new Image();
+				billardtr.src = 'img/billardtm.png';
+				this.ctx.drawImage(billardtr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "m":
+				billardbl = new Image();
+				billardbl.src = 'img/billardtr.png';
+				this.ctx.drawImage(billardbl, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "n":
+				billardbr = new Image();
+				billardbr.src = 'img/billardbl.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "o":
+				billardbl = new Image();
+				billardbl.src = 'img/billardbm.png';
+				this.ctx.drawImage(billardbl, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "p":
+				billardbr = new Image();
+				billardbr.src = 'img/billardbr.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+
+
+
+			case "q":
+				billardbr = new Image();
+				billardbr.src = 'img/sofatl.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "r":
+				billardbr = new Image();
+				billardbr.src = 'img/sofatm.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "s":
+				billardbr = new Image();
+				billardbr.src = 'img/sofatr.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "t":
+				billardbr = new Image();
+				billardbr.src = 'img/sofabl.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "u":
+				billardbr = new Image();
+				billardbr.src = 'img/sofabm.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "v":
+				billardbr = new Image();
+				billardbr.src = 'img/sofabr.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+
+
+
+			case "w":
+				billardbr = new Image();
+				billardbr.src = 'img/fridgetl.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "x":
+				billardbr = new Image();
+				billardbr.src = 'img/fridgetr.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "y":
+				billardbr = new Image();
+				billardbr.src = 'img/fridgebl.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+			case "z":
+				billardbr = new Image();
+				billardbr.src = 'img/fridgebr.png';
+				this.ctx.drawImage(billardbr, posX, posY, 10, 10);
+				this.ctx.fill()
+			break;
+
 
 			default: // "space" ~ empty
 				this.ctx.fillStyle = "rgba(239,238,243,1)";
