@@ -466,135 +466,99 @@ function checkKey(e) {
 	
 
 	//Evenement 1 :
-	if (x == 10 && y == 75) {
+	if (x >= 115 && x <= 155 && y >= 180 && y <= 220 && game.level == 1) {
 		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-body').html('<p>decriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 2 :
-	if (x == 10 && y == 75) {
+	}//Evenement 2 :
+	else if (x >= 180 && x <= 220 && y >= 180 && y <= 220 && game.level == 1) {
 		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 3 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La salle ');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 3 :
+	else if (x >= 250 && x <= 290 && y >= 275 && y <= 315 && game.level == 1) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 4 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 4 :
+	else if (x >= 480 && x <= 520 && y >= 180 && y <= 220 && game.level == 1) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 5 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 5 :
+	else if (x >= 730 && x <= 770 && y >= 180 && y <= 220 && game.level == 1) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 6 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 6 :
+	else if (x >= 450 && x <= 490 && y >= 285 && y <= 325 && game.level == 1) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 7 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 7 :
+	else if (x >= 690 && x <= 730 && y >= 335 && y <= 375 && game.level == 1) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 8 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 8 :
+	else if (x >= 910 && x <= 950 && y >= 205 && y <= 245 && game.level == 1) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 9 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 9 :
+	else if (x >= 850 && x <= 890 && y >= 325 && y <= 365 && game.level == 1) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 10 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 10 :
+	else if (x >= 115 && x <= 155 && y >= 180 && y <= 220 && game.level == 1) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 11 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 11 :
+	else if (x >= 130 && x <= 170 && y >= 205 && y <= 245 && game.level == 2) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 12 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 12 :
+	else if (x >= 290 && x <= 330 && y >= 205 && y <= 245 && game.level == 2) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 13 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 13 :
+	else if (x >= 220 && x <= 260 && y >= 415 && y <= 455 && game.level == 2) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 14 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 14 :
+	else if (x >= 370 && x <= 410 && y >= 315 && y <= 355 && game.level == 2) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 15 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 15 :
+	else if (x >= 630 && x <= 670 && y >= 255 && y <= 295 && game.level == 2) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 16 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 16 :
+	else if (x >= 620 && x <= 660 && y >= 455 && y <= 495 && game.level == 2) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 17 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 17 :
+	else if (x >= 770 && x <= 810 && y >= 325 && y <= 365 && game.level == 2) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 18 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 18 :
+	else if (x >= 860 && x <= 910 && y >= 455 && y <= 495 && game.level == 2) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
-	}
-
-	//Evenement 19 :
-	if (x == 10 && y == 75) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="cafet2.jpg" width="100%" height="auto" class="rounded" ></img>');
+	}//Evenement 19 :
+	else if (x >= 920 && x <= 960 && y >= 235 && y <= 275 && game.level == 2) {
+		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
+		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}
 
