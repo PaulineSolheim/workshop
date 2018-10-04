@@ -247,6 +247,15 @@ function CampusExploration() {
 
 }
 
+function addElements(image, x, y) {
+	var c = document.getElementById("board");
+	this.ctx = c.getContext("2d");
+	img = new Image();
+	img.src= image;
+	this.ctx.drawImage(img, x, y, 10, 10);
+	this.ctx.fill()
+}
+
 function Engine() {
 	this.ctx;
 	this.start = function () {
@@ -272,102 +281,56 @@ function Engine() {
 			case "@": // nao on empty space
 				x = posX;
 				y = posY;
-				base_image = new Image();
-				base_image.src = 'nao.png';
-				this.ctx.drawImage(base_image, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/nao.png', posX, posY);
 				break;
 			case "1":
-				topleftq = new Image();
-				topleftq.src = 'img/topleftquestion.png';
-				this.ctx.drawImage(topleftq, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/topleftquestion.png', posX, posY);
 				break;
 			case "2":
-				toprightq = new Image();
-				toprightq.src = 'img/toprightquestion.png';
-				this.ctx.drawImage(toprightq, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/toprightquestion.png', posX, posY);
 			break;
 			case "3":
-				botleftq = new Image();
-				botleftq.src = 'img/botleftquestion.png';
-				this.ctx.drawImage(botleftq, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/botleftquestion.png', posX, posY);
 			break;
 			case "4":
-				botrightq = new Image();
-				botrightq.src = 'img/botrightquestion.png';
-				this.ctx.drawImage(botrightq, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/botrightquestion.png', posX, posY);
 			break;
 			case "5":
-				topleftp = new Image();
-				topleftp.src = 'img/topleftplant.jpeg';
-				this.ctx.drawImage(topleftp, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/topleftplant.jpeg', posX, posY);
 				break;
 			case "6":
-				toprightp = new Image();
-				toprightp.src = 'img/toprightplant.jpeg';
-				this.ctx.drawImage(toprightp, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/toprightplant.jpeg', posX, posY);
 			break;
 			case "7":
-				botleftp = new Image();
-				botleftp.src = 'img/botleftplant.jpeg';
-				this.ctx.drawImage(botleftp, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/botleftplant.jpeg', posX, posY);
 			break;
 			case "8":
-				botrightp = new Image();
-				botrightp.src = 'img/botrightplant.jpeg';
-				this.ctx.drawImage(botrightp, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/botrightplant.jpeg', posX, posY);
 			break;
 			case "a":
-				toprightdesk = new Image();
-				toprightdesk.src = 'img/a.jpg';
-				this.ctx.drawImage(toprightdesk, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/a.jpg', posX, posY);
 			break;
 			case "b":
-				topmiddledesk = new Image();
-				topmiddledesk.src = 'img/b.jpg';
-				this.ctx.drawImage(topmiddledesk, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/b.jpg', posX, posY);
 			break;
 			case "c":
-				toprightdesk = new Image();
-				toprightdesk.src = 'img/c.jpg';
-				this.ctx.drawImage(toprightdesk, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/c.jpg', posX, posY);
 			break;
 			case "d":
-				botleftdesk = new Image();
-				botleftdesk.src = 'img/d.jpg';
-				this.ctx.drawImage(botleftdesk, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/d.jpg', posX, posY);
 			break;
 			case "e":
-				botmiddledesk = new Image();
-				botmiddledesk.src = 'img/e.jpg';
-				this.ctx.drawImage(botmiddledesk, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('img/e.jpg', posX, posY);
 			break;
 			case "f":
-				botrightdesk = new Image();
-				botrightdesk.src = 'f.jpg';
-				this.ctx.drawImage(botrightdesk, posX, posY, 10, 10);
-				this.ctx.fill()
+				addElements('f.jpg', posX, posY);
 			break;
+
 			default: // "space" ~ empty
 				this.ctx.fillStyle = "rgba(239,238,243,1)";
 				this.ctx.fillRect(posX, posY, 10, 10);
 
 		};
-
-
 
 	}
 
