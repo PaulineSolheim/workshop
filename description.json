@@ -1,0 +1,81 @@
+
+{
+  "campusCV":{
+  "1": //salle de travail
+  {"description":"Les locaux contiennent de nombreux lieux de travail libre, dont certaines où les élèves <br> peuvent se regrouper en petits groupes et s’isoler, tout en profitant des équipements <br> nécessaires pour installer le matériel.",
+  "image":""
+  },
+  "2": //salle 2
+  {"description":"En ce moment… <br> Cours WIS : Unité d’enseignement optionnelle ;  Développement d’applications <br> web et nomades, comprenant « Données et développement d’appli »",
+    "image":""
+  },
+  "3": //salle 3
+  {"description":"En ce moment… <br> Cours EPSI : Développement d’appli informatiques, comprenant ; <br> - Développement environnement objet : Java et JEE <br> - Intégration continue Java et Jenkins »",
+    "image":""
+  },
+  "4": //salle 4
+  {"description":"En ce moment… <br> Cours EPSI : Gestion des données, comprenant ; <br> - Conception et exploitation d’une base de données : SGBD Oracle <br> - Administration d’une base de donnée",
+    "image":""
+  },
+  "5": //salle 5
+  {"description":"En ce moment… <br> Cours WIS : Stratégie et digital business, comprenant ; <br> - Management de projet  - Stratégie digitale <br> - Communication & Techniques d’expression",
+    "image":""
+  },
+  "6": //salle 6
+  {"description":"En ce moment… <br> Cours EPSI : Salle des options. En fonction du choix, on a ; <br> - Sécurité informatique <br> - Virtualisation <br> Données et objets connectés",
+    "image":""
+  },
+  "7": //cafet
+  {"description":"Distributeur, tables et babyfoot, cette salle sert plutôt à se regrouper <br> pour se détendre pendant le repas.",
+    "image":""
+  },
+  "8": //Royaume du BDE
+  {"description":"Salle de réunion réservée aux membres du Bureau Des Elèves. <br> On raconte que les intrus sont chassés à coup de club de golf…",
+    "image":""
+  },
+  "9": //salle des profs
+  {"description":"Salle réservée aux professeurs, leur servant à fuir les élèves.",
+    "image":""
+  },
+  "10": //accueil
+  {"description":"L’administration principale de l’école se trouve dans l’autre bâtiment, mais, par <br> soucis pratique, un bureau est quand même <br> placé dans ses locaux  pour orienter les âmes perdues.",
+    "image":""
+  }},
+  campusA:{
+  "1"://salle de travail
+  {"description":"Les locaux contiennent de nombreux lieux de travail libre, dont certaines où les élèves <br> peuvent se regrouper en petits groupes et s’isoler, tout en profitant  des équipements <br> nécessaires pour installer le matériel.",
+  "image":""
+  },
+  "2"://cafet
+  {"description":"Distributeur, tables et micro-onde, cette salle sert plutôt à se regrouper <br> pour se détendre pendant le repas.",
+  "image":""
+  },
+  "3"://salle 3
+  {"description":"En ce moment… <br> Cours WIS : Unité d’enseignement optionnelle ; Web marketing, comprenant ; <br> - Stratégies e-marketing <br> - Données digitales",
+  "image":""
+  },
+  "4": //Salle 4
+  {"description":"En ce moment… <br> Cours EPSI : Méthodes et projets, comprenant ; <br> - projets SI et recherche opérationnelle (UML, gestion de projet via ITIL et RO) <br> - Environnement juridique et financier",
+  "image":""
+  },
+  "5": //Salle 5
+  {"description":"En ce moment… <br> Cours WIS : Conception et intégration d’applications web et mobile, comprenant ; <br> - Développement front et back end web et mobile <br> - Cloud web et sécurité",
+  "image":""
+  },
+  "6": //salle 6
+  {"description":"En ce moment… <br> Cours EPSI : Administration infrastructure système et réseau, comprenant ; <br> - IP, technologie et service réseau sans fil <br> - Administration sous Windows <br> - Sécurité système et réseau",
+  "image":""
+  },
+  "7": //accueil
+  {"description":"Renseignement ou papiers relatif à l’école, c’est ici que ce fait <br> une grande partie de l’administration d’Epsi Montpellier.",
+  "image":""
+  },
+  "8": //Laboratoire MyDil
+  {"description":"Dans cette salle, les élèves ont accès à des technologies plus rares et/ou trop <br> onéreuses pour expérimenter, voir faire des projets dessus, <br> afin d’élargir leurs possibilités.",
+  "image":""
+  },
+  "9": //escalier
+  {"description":"Au premier étage, on trouve les bureaux du staff de l’école ; directrice, <br> responsables d’admission… Des personnes que l’on peut rencontrer sur rendez-vous <br> et qui viendront de toute façon vous chercher au rez-de-chaussée.",
+  "image":""
+  }}
+}
