@@ -622,7 +622,7 @@ function Engine() {
 
 
 			default: // "space" ~ empty
-				this.ctx.fillStyle = "rgba(239,238,243,1)";
+				this.ctx.fillStyle = "rgba(255,255,255,1)";
 				this.ctx.fillRect(posX, posY, 10, 10);
 
 		};
