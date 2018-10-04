@@ -756,7 +756,7 @@ function checkKey(e) {
 		$('#modal').modal();
 	}//Evenement 13 :
 	else if (x >= 220 && x <= 260 && y >= 415 && y <= 455 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert...  Cours WIS : webmarketing !');
+		$('#modal .modal-title').html('Vous avez decouvert...  La salle de cour 3 !');
 		$('#modal .modal-body').html('<p>'+json.campusA["3"].description+'</p><img src="Apo/3.jpg" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 14 :
