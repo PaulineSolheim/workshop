@@ -323,7 +323,7 @@ function Engine() {
 				addElements('img/e.jpg', posX, posY);
 			break;
 			case "f":
-				addElements('f.jpg', posX, posY);
+				addElements('img/f.jpg', posX, posY);
 			break;
 
 			default: // "space" ~ empty
