@@ -1,3 +1,106 @@
+var json = {
+    "campusCV": {
+        "1": 
+        {
+            "description": "Les locaux contiennent de nombreux lieux de travail libre, dont certaines où les élèves peuvent se regrouper en petits groupes et s’isoler, tout en profitant des équipements  nécessaires pour installer le matériel.",
+            "image": ""
+        },
+        "2": 
+        {
+            "description": "En ce moment…  Cours WIS : Unité d’enseignement optionnelle ;  Développement d’applications  web et nomades, comprenant « Données et développement d’appli »",
+            "image": ""
+        },
+        "3": 
+        {
+            "description": "En ce moment…  Cours EPSI : Développement d’appli informatiques, comprenant ;  - Développement environnement objet : Java et JEE  - Intégration continue Java et Jenkins »",
+            "image": ""
+        },
+        "4": 
+        {
+            "description": "En ce moment…  Cours EPSI : Gestion des données, comprenant ;  - Conception et exploitation d’une base de données : SGBD Oracle  - Administration d’une base de donnée",
+            "image": ""
+        },
+        "5": 
+        {
+            "description": "En ce moment…  Cours WIS : Stratégie et digital business, comprenant ;  - Management de projet  - Stratégie digitale  - Communication & Techniques d’expression",
+            "image": ""
+        },
+        "6": 
+        {
+            "description": "En ce moment…  Cours EPSI : Salle des options. En fonction du choix, on a ;  - Sécurité informatique  - Virtualisation  Données et objets connectés",
+            "image": ""
+        },
+        "7": 
+        {
+            "description": "Distributeur, tables et babyfoot, cette salle sert plutôt à se regrouper  pour se détendre pendant le repas.",
+            "image": ""
+        },
+        "8": 
+        {
+            "description": "Salle de réunion réservée aux membres du Bureau Des Elèves.  On raconte que les intrus sont chassés à coup de club de golf…",
+            "image": ""
+        },
+        "9": 
+        {
+            "description": "Salle réservée aux professeurs, leur servant à fuir les élèves.",
+            "image": ""
+        },
+        "10": 
+        {
+            "description": "L’administration principale de l’école se trouve dans l’autre bâtiment, mais, par  soucis pratique, un bureau est quand même  placé dans ses locaux  pour orienter les âmes perdues.",
+            "image": ""
+        }
+    },
+    "campusA": {
+        "1": 
+        {
+            "description": "Les locaux contiennent de nombreux lieux de travail libre, dont certaines où les élèves  peuvent se regrouper en petits groupes et s’isoler, tout en profitant  des équipements  nécessaires pour installer le matériel.",
+            "image": ""
+        },
+        "2": 
+        {
+            "description": "Distributeur, tables et micro-onde, cette salle sert plutôt à se regrouper  pour se détendre pendant le repas.",
+            "image": ""
+        },
+        "3": 
+        {
+            "description": "En ce moment…  Cours WIS : Unité d’enseignement optionnelle ; Web marketing, comprenant ;  - Stratégies e-marketing  - Données digitales",
+            "image": ""
+        },
+        "4": 
+        {
+            "description": "En ce moment…  Cours EPSI : Méthodes et projets, comprenant ;  - projets SI et recherche opérationnelle (UML, gestion de projet via ITIL et RO)  - Environnement juridique et financier",
+            "image": ""
+        },
+        "5": 
+        {
+            "description": "En ce moment…  Cours WIS : Conception et intégration d’applications web et mobile, comprenant ;  - Développement front et back end web et mobile  - Cloud web et sécurité",
+            "image": ""
+        },
+        "6": 
+        {
+            "description": "En ce moment…  Cours EPSI : Administration infrastructure système et réseau, comprenant ;  - IP, technologie et service réseau sans fil  - Administration sous Windows  - Sécurité système et réseau",
+            "image": ""
+        },
+        "7": 
+        {
+            "description": "Renseignement ou papiers relatif à l’école, c’est ici que ce fait  une grande partie de l’administration d’Epsi Montpellier.",
+            "image": ""
+        },
+        "8": 
+        {
+            "description": "Dans cette salle, les élèves ont accès à des technologies plus rares et/ou trop  onéreuses pour expérimenter, voir faire des projets dessus,  afin d’élargir leurs possibilités.",
+            "image": ""
+        },
+        "9":
+        {
+            "description": "Au premier étage, on trouve les bureaux du staff de l’école ; directrice,  responsables d’admission… Des personnes que l’on peut rencontrer sur rendez-vous  et qui viendront de toute façon vous chercher au rez-de-chaussée.",
+            "image": ""
+        }
+    }
+}
+
+
 function changecharAt(str, i, c) {
 	var strstart = str.substr(0, i - 1);
 	var strend = str.substr(i, str.length - i);
@@ -463,115 +566,114 @@ function checkKey(e) {
 	}
 
 
-	
-
 	//Evenement 1 :
 	if (x >= 115 && x <= 155 && y >= 180 && y <= 220 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La caféteria !');
-		$('#modal .modal-body').html('<p>decriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez découvert... la salle de travail !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["1"].description+' </p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 2 :
 	else if (x >= 180 && x <= 220 && y >= 180 && y <= 220 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html("Vous avez decouvert... Cours WIS : développement d'applis web !");
+		$('#modal .modal-body').html('<p>'+json.campusCV["2"].description+'</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 3 :
 	else if (x >= 250 && x <= 290 && y >= 275 && y <= 315 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html("Vous avez decouvert... Cours EPSI : développement d'applis informatiques !");
+		$('#modal .modal-body').html('<p>'+json.campusCV["3"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 4 :
 	else if (x >= 480 && x <= 520 && y >= 180 && y <= 220 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... Cours EPSI : gestion de données !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["4"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 5 :
 	else if (x >= 730 && x <= 770 && y >= 180 && y <= 220 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... Cours WIS : stratégie et digital business !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["5"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 6 :
 	else if (x >= 450 && x <= 490 && y >= 285 && y <= 325 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... Cours EPSI : salle des options !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["6"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 7 :
 	else if (x >= 690 && x <= 730 && y >= 335 && y <= 375 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... la caféteria !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["7"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 8 :
 	else if (x >= 910 && x <= 950 && y >= 205 && y <= 245 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... le temple du BDE !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["8"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 9 :
 	else if (x >= 850 && x <= 890 && y >= 325 && y <= 365 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... la salle des profs !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["9"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 10 :
 	else if (x >= 115 && x <= 155 && y >= 180 && y <= 220 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html("Vous avez decouvert... l'accueil !");
+		$('#modal .modal-body').html('<p>'+json.campusCV["10"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 11 :
 	else if (x >= 130 && x <= 170 && y >= 205 && y <= 245 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html("Vous avez decouvert... la salle de travail !");
+		$('#modal .modal-body').html('<p>'+json.campusA["1"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 12 :
 	else if (x >= 290 && x <= 330 && y >= 205 && y <= 245 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... la caféteria !');
+		$('#modal .modal-body').html('<p>'+json.campusA["2"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" >');
 		$('#modal').modal();
 	}//Evenement 13 :
 	else if (x >= 220 && x <= 260 && y >= 415 && y <= 455 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert...  Cours WIS : webmarketing !');
+		$('#modal .modal-body').html('<p>'+json.campusA["3"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 14 :
 	else if (x >= 370 && x <= 410 && y >= 315 && y <= 355 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... Cours EPSI : méthodes et projet !');
+		$('#modal .modal-body').html('<p>'+json.campusA["4"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 15 :
 	else if (x >= 630 && x <= 670 && y >= 255 && y <= 295 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html("Vous avez decouvert... Cours WIS : conception et intégration d'applis web !");
+		$('#modal .modal-body').html('<p>'+json.campusA["5"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 16 :
 	else if (x >= 620 && x <= 660 && y >= 455 && y <= 495 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... Cours EPSI : administration infrastructure et réseau !');
+		$('#modal .modal-body').html('<p>'+json.campusA["6"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 17 :
 	else if (x >= 770 && x <= 810 && y >= 325 && y <= 365 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html("Vous avez decouvert... L'accueil!");
+		$('#modal .modal-body').html('<p>'+json.campusA["7"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 18 :
 	else if (x >= 860 && x <= 910 && y >= 455 && y <= 495 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... MyDil !');
+		$('#modal .modal-body').html('<p>'+json.campusA["8"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 19 :
 	else if (x >= 920 && x <= 960 && y >= 235 && y <= 275 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... La bulle de la cafet\' !');
-		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html("Vous avez decouvert... L'escalier!");
+		$('#modal .modal-body').html('<p>'+json.campusA["9"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}
-	
-	//Evenement next_level :
+
+    //Evenement next_level :
 	if ( x == 640 && y == 235 && game.level == 1) {game.nextlevel();}
 
 	//Evenement previous_level :
 	if (x == 720 && y == 105 && game.level == 2) {game.previouslevel();}
 
 
-
 	engine.drawBoard(game);
 }
+
+
 
 function init() {
 	engine.start();
