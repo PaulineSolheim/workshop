@@ -564,102 +564,102 @@ function checkKey(e) {
 	else if (e.keyCode == '65') {
 		game.previouslevel();
 	}
-
+    console.log(x + " " + y);
 
 	//Evenement 1 :
 	if (x >= 115 && x <= 155 && y >= 180 && y <= 220 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez découvert... la salle de travail !');
-		$('#modal .modal-body').html('<p>'+json.campusCV["1"].description+' </p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez découvert... la salle de cours 6 !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["6"].description+' </p><img src="CV/6.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 2 :
-	else if (x >= 180 && x <= 220 && y >= 180 && y <= 220 && game.level == 1) {
-		$('#modal .modal-title').html("Vous avez decouvert... Cours WIS : développement d'applis web !");
-		$('#modal .modal-body').html('<p>'+json.campusCV["2"].description+'</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+	else if (x >= 820 && x <= 860 && y >= 115 && y <= 155 && game.level == 1) {
+		$('#modal .modal-title').html("Vous avez decouvert... salle de cours 2 !");
+		$('#modal .modal-body').html('<p>'+json.campusCV["2"].description+'</p><img src="CV/2.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 3 :
 	else if (x >= 250 && x <= 290 && y >= 275 && y <= 315 && game.level == 1) {
-		$('#modal .modal-title').html("Vous avez decouvert... Cours EPSI : développement d'applis informatiques !");
-		$('#modal .modal-body').html('<p>'+json.campusCV["3"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html("Vous avez decouvert... salle de cours 4 !");
+		$('#modal .modal-body').html('<p>'+json.campusCV["4"].description+'</p><img src="CV/4.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 4 :
 	else if (x >= 480 && x <= 520 && y >= 180 && y <= 220 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... Cours EPSI : gestion de données !');
-		$('#modal .modal-body').html('<p>'+json.campusCV["4"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... salle de cours 3 !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["3"].description+'</p><img src="CV/3.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 5 :
-	else if (x >= 730 && x <= 770 && y >= 180 && y <= 220 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... Cours WIS : stratégie et digital business !');
-		$('#modal .modal-body').html('<p>'+json.campusCV["5"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+	else if (x >= 190 && x <= 230 && y >= 185 && y <= 225 && game.level == 1) {
+		$('#modal .modal-title').html('Vous avez decouvert... La salle 5 !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["5"].description+'</p><img src="CV/5.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 6 :
 	else if (x >= 450 && x <= 490 && y >= 285 && y <= 325 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... Cours EPSI : salle des options !');
-		$('#modal .modal-body').html('<p>'+json.campusCV["6"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... Royaume du BDE !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["8"].description+'</p><img src="CV/8.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 7 :
 	else if (x >= 690 && x <= 730 && y >= 335 && y <= 375 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... la caféteria !');
-		$('#modal .modal-body').html('<p>'+json.campusCV["7"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... la salle de travail !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["1"].description+'</p><img src="CV/1.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 8 :
 	else if (x >= 910 && x <= 950 && y >= 205 && y <= 245 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... le temple du BDE !');
-		$('#modal .modal-body').html('<p>'+json.campusCV["8"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... la salle des profs !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["9"].description+'</p><img src="CV/9.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 9 :
 	else if (x >= 850 && x <= 890 && y >= 325 && y <= 365 && game.level == 1) {
-		$('#modal .modal-title').html('Vous avez decouvert... la salle des profs !');
-		$('#modal .modal-body').html('<p>'+json.campusCV["9"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html('Vous avez decouvert... la caféteria !');
+		$('#modal .modal-body').html('<p>'+json.campusCV["7"].description+'</p><img src="CV/7.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 10 :
-	else if (x >= 115 && x <= 155 && y >= 180 && y <= 220 && game.level == 1) {
+	else if (x >= 730 && x <= 770 && y >= 115 && y <= 155 && game.level == 1) {/*vérifier*/
 		$('#modal .modal-title').html("Vous avez decouvert... l'accueil !");
-		$('#modal .modal-body').html('<p>'+json.campusCV["10"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-body').html('<p>'+json.campusCV["10"].description+'</p><img src="CV/10.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 11 :
 	else if (x >= 130 && x <= 170 && y >= 205 && y <= 245 && game.level == 2) {
-		$('#modal .modal-title').html("Vous avez decouvert... la salle de travail !");
-		$('#modal .modal-body').html('<p>'+json.campusA["1"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" ></img>');
+		$('#modal .modal-title').html("Vous avez decouvert... la salle 6 !");
+		$('#modal .modal-body').html('<p>'+json.campusA["6"].description+'</p><img src="Apo/6.jpg" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}//Evenement 12 :
 	else if (x >= 290 && x <= 330 && y >= 205 && y <= 245 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... la caféteria !');
-		$('#modal .modal-body').html('<p>'+json.campusA["2"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded" >');
+		$('#modal .modal-title').html('Vous avez decouvert... la salle de cours 5 !');
+		$('#modal .modal-body').html('<p>'+json.campusA["5"].description+'</p><img src="Apo/5.jpg" width="100%" height="auto" class="rounded" >');
 		$('#modal').modal();
 	}//Evenement 13 :
 	else if (x >= 220 && x <= 260 && y >= 415 && y <= 455 && game.level == 2) {
 		$('#modal .modal-title').html('Vous avez decouvert...  Cours WIS : webmarketing !');
-		$('#modal .modal-body').html('<p>'+json.campusA["3"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
+		$('#modal .modal-body').html('<p>'+json.campusA["3"].description+'</p><img src="Apo/3.jpg" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 14 :
 	else if (x >= 370 && x <= 410 && y >= 315 && y <= 355 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... Cours EPSI : méthodes et projet !');
-		$('#modal .modal-body').html('<p>'+json.campusA["4"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
+		$('#modal .modal-title').html('Vous avez decouvert... la salle de cours 4 !');
+		$('#modal .modal-body').html('<p>'+json.campusA["4"].description+'</p><img src="Apo/4.jpg" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 15 :
 	else if (x >= 630 && x <= 670 && y >= 255 && y <= 295 && game.level == 2) {
-		$('#modal .modal-title').html("Vous avez decouvert... Cours WIS : conception et intégration d'applis web !");
-		$('#modal .modal-body').html('<p>'+json.campusA["5"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
+		$('#modal .modal-title').html("Vous avez decouvert... La salle Mac !");
+		$('#modal .modal-body').html('<p>'+json.campusA["1"].description+'</p><img src="Apo/1.jpg" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 16 :
 	else if (x >= 620 && x <= 660 && y >= 455 && y <= 495 && game.level == 2) {
-		$('#modal .modal-title').html('Vous avez decouvert... Cours EPSI : administration infrastructure et réseau !');
-		$('#modal .modal-body').html('<p>'+json.campusA["6"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
+		$('#modal .modal-title').html('Vous avez decouvert... la caféteria !');
+		$('#modal .modal-body').html('<p>'+json.campusA["2"].description+'</p><img src="Apo/2.jpg" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 17 :
 	else if (x >= 770 && x <= 810 && y >= 325 && y <= 365 && game.level == 2) {
-		$('#modal .modal-title').html("Vous avez decouvert... L'accueil!");
-		$('#modal .modal-body').html('<p>'+json.campusA["7"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
+		$('#modal .modal-title').html("Vous avez decouvert... L'escalier menant au 1e étage!");
+		$('#modal .modal-body').html('<p>'+json.campusA["9"].description+'</p><img src="Apo/9.jpg" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 18 :
 	else if (x >= 860 && x <= 910 && y >= 455 && y <= 495 && game.level == 2) {
 		$('#modal .modal-title').html('Vous avez decouvert... MyDil !');
-		$('#modal .modal-body').html('<p>'+json.campusA["8"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
+		$('#modal .modal-body').html('<p>'+json.campusA["8"].description+'</p><img src="Apo/8.jpg" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}//Evenement 19 :
 	else if (x >= 920 && x <= 960 && y >= 235 && y <= 275 && game.level == 2) {
-		$('#modal .modal-title').html("Vous avez decouvert... L'escalier!");
-		$('#modal .modal-body').html('<p>'+json.campusA["9"].description+'</p><img src="img/cafet2.png" width="100%" height="auto" class="rounded">');
+		$('#modal .modal-title').html("Vous avez decouvert... L'administration!");
+		$('#modal .modal-body').html('<p>'+json.campusA["7"].description+'</p><img src="Apo/7.jpg" width="100%" height="auto" class="rounded">');
 		$('#modal').modal();
 	}
 
