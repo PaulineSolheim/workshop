@@ -561,6 +561,12 @@ function checkKey(e) {
 		$('#modal .modal-body').html('<p>descriptif</p><img src="img//cafet2.png" width="100%" height="auto" class="rounded" ></img>');
 		$('#modal').modal();
 	}
+	
+	//Evenement next_level :
+	if ( x == 640 && y == 235 && game.level == 1) {game.nextlevel();}
+
+	//Evenement previous_level :
+	if (x == 720 && y == 105 && game.level == 2) {game.previouslevel();}
 
 
 
