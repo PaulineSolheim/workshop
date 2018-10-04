@@ -40,8 +40,8 @@ function CampusExploration() {
 		 "#                #               #                           # abc        34     # 34              #|"+
 		 "#56     abc      #               #                           # def               #                 #|"+
 		 "#78     def      #               #                           ############   ######   ###############|"+
-		 "###########      #               #                           #  @$ #                               #|"+
-		 "#    #    #      #               #                           #  ?! #                               #|"+
+		 "###########      #               #                           #  @  #                               #|"+
+		 "#    #    #      #               #                           #     #                               #|"+
 		 "#    #    #      #               #                           #     #                               #|"+
 		 "#    #    #  12  #  12           #               12          #     #     ###############           #|"+
 		 "#    #    #  34  #  34           #56             34          #     #     #                  12     #|"+
@@ -281,22 +281,7 @@ function Engine() {
 			case "@": // nao on empty space
 				x = posX;
 				y = posY;
-				addElements('img/nao1.png', posX, posY);
-				break;
-			case "$":
-				x = posX;
-				y = posY;
-				addElements('img/nao2.png', posX, posY);
-				break;
-			case "?":
-				x = posX;
-				y = posY;
-				addElements('img/nao3.png', posX, posY);
-				break;	
-			case "!":
-				x = posX;
-				y = posY;
-				addElements('img/nao4.png', posX, posY);
+				addElements('img/nao.png', posX, posY);
 				break;
 			case "1":
 				addElements('img/topleftquestion.png', posX, posY);
